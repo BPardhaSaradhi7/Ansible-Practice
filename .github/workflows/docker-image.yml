@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./BACKEND/SpringBootProject
-          file: ./BACKEND/SpringBootProject/backend.Dockerfile
+          file: ./BACKEND/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backendp:latest
 
